@@ -1,0 +1,42 @@
+.toast {
+  display: flex;
+  gap: 10px;
+
+  &__message {
+    font-weight: bold;
+  }
+  .icon {
+    margin-left: 8px;
+  }
+
+  &--left {
+    min-width: 25px;
+
+    &--error {
+      border-left: 4px solid var(--color-red);
+    }
+    &--success {
+      border-left: 4px solid var(--color-green42);
+    }
+    &--info {
+      border-left: 4px solid var(--color-blue);
+    }
+  }
+
+  &--right {
+    > div {
+      margin-bottom: 5px;
+    }
+
+    .toast__title {
+      font-size: 14px;
+    }
+    .toast__message {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .toast__date {
+      font-size: 12px;
+    }
+  }
+}

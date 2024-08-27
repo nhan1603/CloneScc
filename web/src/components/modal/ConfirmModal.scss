@@ -1,0 +1,12 @@
+.footer-button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+
+  .delete-button {
+    background-color: #e54545;
+  }
+  .delete-button:not(:disabled):hover {
+    background-color: #c30000;
+  }
+}

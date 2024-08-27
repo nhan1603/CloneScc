@@ -1,0 +1,89 @@
+@import '../../variables.scss';
+
+.notification {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+
+  .bell {
+    width: 24px;
+    position: relative;
+  }
+
+  .counter {
+    position: absolute;
+    top: 30px;
+    background-color: $red;
+    border-radius: 50%;
+    right: 94px;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+  }
+
+  &-list {
+    min-width: 250px;
+    position: absolute;
+    background-color: $salt;
+    z-index: 10;
+    top: 61px;
+    right: 64px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 1%;
+    box-shadow: 0 2px 9px 0 var(--color-grey200);
+
+    &-container {
+      overflow: auto;
+      max-height: 300px;
+      .no-records {
+        font-size: 16px;
+        text-align: center;
+      }
+      .item {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.6;
+        max-height: 300px;
+        overflow: auto;
+        margin-bottom: 15px;
+        padding: 5px 8px;
+        color: var(--color-text);
+        text-decoration: none;
+
+        &:hover {
+          background-color: var(--color-gray96);
+        }
+        &__title {
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .is-new {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: var(--color-green);
+            margin-right: 10px;
+          }
+        }
+        &__message {
+          font-size: 16px;
+          font-weight: 600;
+        }
+        &__date {
+          font-size: 12px;
+        }
+      }
+    }
+
+    button {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+.body-layout {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+
+  &__header {
+    display: flex;
+    background-color: $salt;
+    padding: 0 20px;
+    align-items: center;
+    border-bottom: 1px solid $grey200;
+
+    &--left {
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+
+    &--right {
+      margin-left: auto;
+    }
+  }
+}

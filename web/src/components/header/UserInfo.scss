@@ -1,0 +1,22 @@
+.user-info {
+  display: flex;
+  height: 63%;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-neutral-dark);
+  position: relative;
+  cursor: pointer;
+
+  span {
+    color: var(--color-panel);
+  }
+  .logout {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: var(--color-panel);
+    font-size: 16px;
+    padding: 7px;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+.camera {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px;
+
+  &__item {
+    background: $salt;
+    width: calc(50% - 12px);
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 24px;
+
+    &:nth-child(2n-1) {
+      margin-right: 24px;
+    }
+
+    .advanced-select-container {
+      width: 240px;
+    }
+  }
+
+  &__content {
+    iframe {
+      margin-bottom: 16px;
+      display: block;
+    }
+  }
+}
+
+.advanced-select-container {
+  width: 355px;
+}

@@ -1,0 +1,10 @@
+.pagination-summary {
+  display: flex;
+  margin-left: auto;
+
+  &__display-string {
+    display: flex;
+    align-items: center;
+    color: #8c969d;
+  }
+}
